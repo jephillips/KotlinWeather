@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val itemList = WeatherApi.GetWeatherByZip(35859)
+        val itemList = WeatherApi.GetWeatherByID(524901)
 
         val forecastList: RecyclerView = find(R.id.forecast_list)
         forecastList.layoutManager = LinearLayoutManager(this)
